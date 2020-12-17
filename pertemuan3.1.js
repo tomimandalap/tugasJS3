@@ -1,9 +1,9 @@
 // asyncronus
-// console.log("Hello World")
-// setTimeout(() => {
-//   console.log("Hai Tomi")
-// },1000)
-// console.log("Good Vibes")
+console.log("Hello World")
+setTimeout(() => {
+  console.log("Hai Tomi")
+},1000)
+console.log("Good Vibes")
 
 // callback asyncronus
 // const pertama = () => console.log("Satu")
