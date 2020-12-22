@@ -6,6 +6,7 @@ const cekHariKerja = (day) => {
       let cek = dataDay.find( (item) => {
         return item === day
       })
+      // Pengondisian
       if(cek) {
         resolve(cek)
       } else {
@@ -28,7 +29,7 @@ const cekHariKerja = (day) => {
 // })
 
 // (then catch)
-const promised = (isiHari) => {
+const inputHari = (isiHari) => {
   // cekHariKerja( isiHari.charAt(0).toUpperCase() + isiHari.substr(1).toLowerCase() )
   cekHariKerja(isiHari)
   .then((response) => {
@@ -42,7 +43,8 @@ const promised = (isiHari) => {
     console.log(error.message)
   })
 }
-promised('Selasa')
+// inputHari('Selasa')
+inputHari('Sabtu')
 
 // Kesimpulan menggunakan then catch pada promise akan menampilkan value promisenya
 // apabila (promise) terpenuhi akan memanggil callback resolve yang disebut dengan response

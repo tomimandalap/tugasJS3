@@ -6,6 +6,7 @@ const getmonth = (callback) => {
       'May', 'Juni', 'July', 'August', 
       'September', 'October', 'November', 'Desember'
     ]
+    // pengkondisian
     if(!error) {
       callback(null, month)
     } else {
@@ -18,7 +19,7 @@ getmonth( (value, array) => {
   // console.log(value)
   // console.log(array)
 
-  if (value == null) {
+  if (!value) {
     array.map((element)=> console.log(element))
   } else {
     console.log(value.message)

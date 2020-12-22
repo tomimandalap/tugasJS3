@@ -4,11 +4,15 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => response.json()) // convert ke json
   // .then(response => console.log(response)) // menampilkan keseluruhan data
   .then(response => {
-    let index = 10
-    for(let i=0; i<index; i++){
-      const nama = response[i]["name"]
-      console.log(`Hallo, ${nama}`)
-    }
+    // let index = 10
+    // for(let i=0; i<index; i++){
+    //   const nama = response[i]["name"]
+    //   console.log(`Hallo, ${nama}`)
+    // }
+    // array.map((element)=> console.log(element))
+
+    // tambahkan map jangan for
+    const result = response.map(index => console.log(index.name) )
   })
   .catch(err => console.log(err.message))
 
